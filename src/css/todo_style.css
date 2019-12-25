@@ -1,0 +1,366 @@
+:root {
+  /* 
+      FIRST WE'LL DEFINE OUR SWATCHES, i.e. THE COMPLEMENTARY
+      COLORS THAT WE'LL USE TOGETHER IN MULTIPLE PLACES THAT
+      TOGETHER WILL MAKE UP A GIVEN THEME
+  */
+  --swatch-foundation:    #EEEEDD; /* USED FOR BODY BACKGROUND */
+  --swatch-primary:       #E6E6E6; /* DOMINANT COLOR, USED FOR MOST BACKGROUNDS */
+  --swatch-complement:    #E1E4CB; /* USED IN FORGROUND OF PRIMARY FOR TEXT AND BORDERS */
+  --swatch_contrast:      #111111; /* USED IN MOUSE-OVER SELECTION OF LARGE ELEMENTS */
+  --swatch-accent:        #669966; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */    
+  --my-font-family:          "Robaaaoto";
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+body {
+  background-color: var(--swatch-foundation);
+  font-family: 'Lexend Exa';
+}
+
+div.banner {
+  background-image: linear-gradient(to bottom,         
+  #849df1, #152a70);
+  color: white;
+  font-size: 48pt;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 3%
+}
+
+.homeBanner {
+  background-image: linear-gradient(to bottom,         
+  #849df1, #152a70);
+  color: white;
+  font-size: 48pt;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: -5%;
+  margin-bottom: 2%;
+}
+
+.home_new_list_button {
+  font-size: 32pt;
+  border-radius: 10px;
+  padding: 1%;
+  
+}
+.home_new_list_button:hover {
+  box-shadow: 1px 2px;
+}
+
+.no_button, .yes_button {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.farLeft, .middle, .farRight {
+  /* padding: 10px 10px 10px 10px; */
+  /* border-radius: 10px;  */
+  border: 2px solid #424242 ;
+  height: 650px;
+
+}
+
+.middle {
+  max-width: 5000px;
+  max-height: 5000px;
+  text-align: center;
+  /* overflow-x:auto;
+  overflow-y:auto; */
+  overflow: auto;
+}
+
+.container {
+  width: 100%;
+
+}
+
+.fourButtons {
+  padding: 5px;
+  border: 1px solid black; 
+}
+
+.zoomIn, .zoomOut, .saveBtn, .closeBtn1 {
+  color: black;
+  padding: 5px;
+  height:100%;
+}
+
+.zoomIn:hover, .zoomOut:hover, .saveBtn:hover, .closeBtn1:hover {
+  color: palevioletred;
+}
+
+.brand-logo {
+  margin-left: 5%
+}
+
+.box {
+  width: 100px; 
+  height: 55px;
+  padding: 10px;
+  margin-left: 40px;
+  border: 1px solid black;
+  
+}
+
+.addedBox {
+  width: 100px; 
+  height: 55px;
+  padding: 10px;
+  margin-left: 40px;
+  border: 1px solid black;
+  margin-top: 2%;
+  /* position: absolute; */
+  /* display: flex; */
+
+  
+}
+
+.box:hover {
+  border: 1px solid palevioletred;
+}
+
+.addedlabelDiv {
+  /* position: absolute; */
+  text-align: center;
+  margin-top: 15px;
+  width: 100px;
+  height: 25px;
+  padding: -4%;
+  /* border: 1px; */
+  font-size: large;
+  border-radius: 0px;
+  border: 0px solid black;
+}
+.labelDiv:hover {
+  color: palevioletred;
+}
+
+.submitBtn {
+  width: 130px; 
+  height: 30px;
+  /* padding: 10px; */
+  margin-left: 30px;
+  font-size: 18px;
+  background-color: #E6E6E6;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.txtfield {
+  width: 130px; 
+  /* height: 15px; */
+  /* padding: 10px; */
+  margin-left: 30px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+
+.submitBtn:hover {
+  width: 130px; 
+  /* height: 15px; */
+  /* padding: 10px; */
+  margin-left: 30px;
+  font-size: large;
+  background-color: #E6E6E6;
+  border-radius: 2px;
+  border: 1px solid palevioletred;
+}
+
+.txtfield:hover {
+  width: 130px; 
+  /* height: 15px; */
+  /* padding: 10px; */
+  margin-left: 30px;
+  border-radius: 2px;
+  border: 1px solid palevioletred;
+}
+
+.addedSubmitBtn {
+  width: 130px; 
+  margin-top: 2%;
+  margin-left: 30px;
+  font-size: large;
+  background-color: #E6E6E6;
+  border-radius: 2px;
+  border: 1px solid black;
+  /* position: absolute; */
+
+}
+
+.addedTextfield {
+
+  margin-top: 2%;
+  width: 130px; 
+  height: 23px;
+  margin-left: 30px;
+  border-radius: 2px;
+  border: 1px solid black;
+  /* position: absolute; */
+
+}
+.addedTextfield:hover, .addedSubmitBtn:hover, .addedBox:hover {
+  border: 1px solid indianred;
+}
+
+.addedlabelDiv:hover {
+  color: indianred;
+}
+
+.closeBTN {
+  margin-top: -17%;
+  margin-right: 5%;
+}
+
+.wireframeContainer {
+  border: 1px solid black;
+  width: 600px;
+  height: 500px;
+  display: inline-block;
+  margin-top: 5%;
+  background-color: white;
+  /* margin-bottom: 5%; */
+  margin-right: 5%;
+  margin-left: 5%;
+  position: relative;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.corner {
+  position: absolute;
+  background: #444;
+  width: 8px;
+  height: 8px;
+}
+.TL {
+  /* margin-bottom: -10px;
+  margin-top:-13px;
+  margin-left: -13px; */
+  position:absolute;
+}
+.TR {
+  /* margin-bottom: -10px;
+  margin-top:-13px;
+  margin-left: 85px; */
+  position:absolute;
+}
+.BL {
+  /* margin-bottom: -100px;
+  margin-top:40px;
+  margin-left: -13px; */
+  position:absolute;
+}
+.BR {
+  /* margin-bottom: -100px;
+  margin-top:40px;
+  margin-left: 85px; */
+  position:absolute;
+}
+
+.rndtest {
+  display: "flex";
+  border: "solid 1px #ddd";
+  background: "#f0f0f0"
+}
+
+/* .TLlabel {
+  margin-bottom: 0px;
+  margin-top:-30px;
+  margin-left: 0px;
+  position:absolute;
+}
+.TRlabel {
+  margin-bottom: 00px;
+  margin-top:-30px;
+  margin-left: 75px;
+  position:absolute;
+}
+.BLlabel {
+  margin-bottom: 0px;
+  margin-top:0px;
+  margin-left: 0px;
+  position:absolute;
+}
+.BRlabel {
+  margin-bottom: 0px;
+  margin-top:0px;
+  margin-left: 75px;
+  position:absolute;
+}
+
+.TLbtn {
+  margin-bottom: 0px;
+  margin-top:-30px;
+  margin-left: -3px;
+  position:absolute;
+}
+.TRbtn {
+  margin-bottom: 0px;
+  margin-top:-30px;
+  margin-left: 125px;
+  position:absolute;
+}
+.BLbtn {
+  margin-bottom: 0px;
+  margin-top:-2px;
+  margin-left: -3px;
+  position:absolute;
+}
+.BRbtn {
+  margin-bottom: 0px;
+  margin-top:-2px;
+  margin-left: 125px;
+  position:absolute;
+}
+
+.TLtxt {
+  margin-bottom: 0px;
+  margin-top:-30px;
+  margin-left: -3px;
+  position:absolute;
+}
+.TRtxt {
+  margin-bottom: 0px;
+  margin-top:-30px;
+  margin-left: 125px;
+  position:absolute;
+}
+.BLtxt {
+  margin-bottom: 0px;
+  margin-top:-2px;
+  margin-left: -3px;
+  position:absolute;
+}
+.BRtxt {
+  margin-bottom: 0px;
+  margin-top:-2px;
+  margin-left: 125px;
+  position:absolute;
+} */
